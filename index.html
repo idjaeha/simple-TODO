@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="public/css/index.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="js-clock">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="public/css/index.css" />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="js-clock clock">
         <h1>00:00</h1>
+      </div>
+
+      <form class="js-form form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <div class="js-greeting greeting"></div>
+      <div class="js-weather"></div>
+
+      <form class="js-toDoForm toDoForm">
+        <input type="text" class="inputToDo" placeholder="Write a to do" />
+      </form>
+
+      <div class="js-toDoList"></div>
     </div>
-
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?"/>
-    </form>
-    <h4 class="js-greeting greeting"></h4>
-
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do"/>
-    </form>
-
-    <ul class="js-toDoList">
-    </ul>
-
-    <span class="js-weather"></span>
 
     <script src="public/javascript/clock.js"></script>
     <script src="public/javascript/greeting.js"></script>
     <script src="public/javascript/todo.js"></script>
-    <script src="public/javascript/bg.js"></script>
     <script src="public/javascript/weather.js"></script>
-</body>
+  </body>
 </html>
